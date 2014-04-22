@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28800864-79A5-4151-BF2C-320D7E3E2190}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Element.Reveal.DataLibrary</RootNamespace>
+    <AssemblyName>Element.Reveal.DataLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile5</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="areaDTO.cs" />
+    <Compile Include="calendarDTO.cs" />
+    <Compile Include="ComboBoxDTO.cs" />
+    <Compile Include="CommonEnum.cs" />
+    <Compile Include="companyDTO.cs" />
+    <Compile Include="componentDTO.cs" />
+    <Compile Include="componentlogDTO.cs" />
+    <Compile Include="DailybrassreportDTO.cs" />
+    <Compile Include="DailybrasstoolboxDTO.cs" />
+    <Compile Include="DataSyncFileVersionInfoDTO.cs" />
+    <Compile Include="DataSyncHistoryInfoDTO.cs" />
+    <Compile Include="DataSyncZumeroInfoDTO.cs" />
+    <Compile Include="DrawingStickyNoteDTO.cs" />
+    <Compile Include="FileStoreDTO.cs" />
+    <Compile Include="SigmaResultTypeDTO.cs" />
+    <Compile Include="UploadedFileInfoDTO.cs" />
+    <Compile Include="rptProjectCwaIwpDTO.cs" />
+    <Compile Include="UploadFileHistoryInfoDTO.cs" />
+    <Compile Include="Utilities\Constant.cs" />
+    <Compile Include="costcodeDTO.cs" />
+    <Compile Include="costcodelockedDTO.cs" />
+    <Compile Include="costcodestructureDTO.cs" />
+    <Compile Include="costcodetaleDTO.cs" />
+    <Compile Include="countryDTO.cs" />
+    <Compile Include="cwaDTO.cs" />
+    <Compile Include="cwpDTO.cs" />
+    <Compile Include="DailybrassDTO.cs" />
+    <Compile Include="DailybrasssignDTO.cs" />
+    <Compile Include="dailytimesheetDTO.cs" />
+    <Compile Include="dailytoolboxDTO.cs" />
+    <Compile Include="DataLoaderCivil.cs" />
+    <Compile Include="DataLoaderElectrical.cs" />
+    <Compile Include="departmentDTO.cs" />
+    <Compile Include="departstructureDTO.cs" />
+    <Compile Include="documentDTO.cs" />
+    <Compile Include="documentmarkupDTO.cs" />
+    <Compile Include="documentmarkupmtoDTO.cs" />
+    <Compile Include="documentnoteDTO.cs" />
+    <Compile Include="drawingcwpDTO.cs" />
+    <Compile Include="drawingDTO.cs" />
+    <Compile Include="drawingreferenceDTO.cs" />
+    <Compile Include="drawingrevisionDTO.cs" />
+    <Compile Include="drawingsdrefDTO.cs" />
+    <Compile Include="DrawingtypeDTO.cs" />
+    <Compile Include="DTOBase.cs" />
+    <Compile Include="EhtmaterialDTO.cs" />
+    <Compile Include="EhtprogressDTO.cs" />
+    <Compile Include="empclassDTO.cs" />
+    <Compile Include="EquipadditionalparametersDTO.cs" />
+    <Compile Include="equipmentDTO.cs" />
+    <Compile Include="equipmentlibDTO.cs" />
+    <Compile Include="estlightingmanhourDTO.cs" />
+    <Compile Include="EwrDTO.cs" />
+    <Compile Include="fieldequipmentDTO.cs" />
+    <Compile Include="fiwpcommentDTO.cs" />
+    <Compile Include="fiwpdocordinalDTO.cs" />
+    <Compile Include="fiwpDTO.cs" />
+    <Compile Include="fiwpequipDTO.cs" />
+    <Compile Include="fiwphistoryDTO.cs" />
+    <Compile Include="fiwpmanonsiteDTO.cs" />
+    <Compile Include="fiwpmanpowerDTO.cs" />
+    <Compile Include="fiwpmaterialDTO.cs" />
+    <Compile Include="fiwpqaqcDTO.cs" />
+    <Compile Include="fiwpwfpDTO.cs" />
+    <Compile Include="fiwpworkflowDTO.cs" />
+    <Compile Include="helpfileDTO.cs" />
+    <Compile Include="holidayorexceptionDTO.cs" />
+    <Compile Include="ImportedfilenameDTO.cs" />
+    <Compile Include="InstrITRDTO.cs" />
+    <Compile Include="ISOPipeDTO.cs" />
+    <Compile Include="LairdEquipMTODTO.cs" />
+    <Compile Include="LairdEqupiLibraryDTO.cs" />
+    <Compile Include="libcablemanhourDTO.cs" />
+    <Compile Include="LibcablemanhoursDTO.cs" />
+    <Compile Include="libconsumableDTO.cs" />
+    <Compile Include="libehtmanhourDTO.cs" />
+    <Compile Include="libequipmanhourDTO.cs" />
+    <Compile Include="libgroundinglocknutDTO.cs" />
+    <Compile Include="libgroundingmanhourDTO.cs" />
+    <Compile Include="libhydromanhourDTO.cs" />
+    <Compile Include="libinstrmanhourDTO.cs" />
+    <Compile Include="libinsulfactorDTO.cs" />
+    <Compile Include="libinsulfireproofDTO.cs" />
+    <Compile Include="libinsulpaintmanhourDTO.cs" />
+    <Compile Include="libinsulpipefactorDTO.cs" />
+    <Compile Include="libinsulpipemanhourDTO.cs" />
+    <Compile Include="liblightingmanhourDTO.cs" />
+    <Compile Include="LibMainChlidTestDTO.cs" />
+    <Compile Include="LibMainTestDTO.cs" />
+    <Compile Include="libpipeclassmanhourDTO.cs" />
+    <Compile Include="libpipemanhourDTO.cs" />
+    <Compile Include="libpipemanhourratioDTO.cs" />
+    <Compile Include="libpipematerialgrpDTO.cs" />
+    <Compile Include="libpipeschmanhourDTO.cs" />
+    <Compile Include="libpipesupmanhourDTO.cs" />
+    <Compile Include="libqaqcformtemplateDTO.cs" />
+    <Compile Include="libracewaymanhourDTO.cs" />
+    <Compile Include="libscaffoldpartDTO.cs" />
+    <Compile Include="loginaccountDTO.cs" />
+    <Compile Include="loginaccountmoduleusergroupDTO.cs" />
+    <Compile Include="LogintraceDTO.cs" />
+    <Compile Include="lookupDTO.cs" />
+    <Compile Include="lookup_bkDTO.cs" />
+    <Compile Include="lookup_megDTO.cs" />
+    <Compile Include="materialcategoryDTO.cs" />
+    <Compile Include="materialDTO.cs" />
+    <Compile Include="materiallogDTO.cs" />
+    <Compile Include="moduleDTO.cs" />
+    <Compile Include="MppFileDTO.cs" />
+    <Compile Include="mtoissueconcernlogDTO.cs" />
+    <Compile Include="OrphanTagDTO.cs" />
+    <Compile Include="P6ActivityDTO.cs" />
+    <Compile Include="P6ProjectDTO.cs" />
+    <Compile Include="pageDTO.cs" />
+    <Compile Include="pageusergroupDTO.cs" />
+    <Compile Include="PartDTO.cs" />
+    <Compile Include="personnel2DTO.cs" />
+    <Compile Include="personnelDTO.cs" />
+    <Compile Include="plantDTO.cs" />
+    <Compile Include="poDTO.cs" />
+    <Compile Include="pohistoryDTO.cs" />
+    <Compile Include="polineitemDTO.cs" />
+    <Compile Include="progressDTO.cs" />
+    <Compile Include="progresshistoryDTO.cs" />
+    <Compile Include="progresslogDTO.cs" />
+    <Compile Include="progressruleofcreditDTO.cs" />
+    <Compile Include="projectcontractorDTO.cs" />
+    <Compile Include="Projectcostcode.cs" />
+    <Compile Include="projectDTO.cs" />
+    <Compile Include="projectmoduleDTO.cs" />
+    <Compile Include="projectscheduleDTO.cs" />
+    <Compile Include="projectschedulehistoryDTO.cs" />
+    <Compile Include="ProjectWizardDTO.cs" />
+    <Compile Include="ProjscheduleDTO.cs" />
+    <Compile Include="projscheduleworkflowDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provenceDTO.cs" />
+    <Compile Include="qaqcconfigDTO.cs" />
+    <Compile Include="qaqcformcomponentDTO.cs" />
+    <Compile Include="qaqcformdetailDTO.cs" />
+    <Compile Include="qaqcformdetailForTestDTO.cs" />
+    <Compile Include="qaqcformDTO.cs" />
+    <Compile Include="qaqcformtemplateDTO.cs" />
+    <Compile Include="qclistDTO.cs" />
+    <Compile Include="quantityserveyDTO.cs" />
+    <Compile Include="rateDTO.cs" />
+    <Compile Include="RequestHeaderDTO.cs" />
+    <Compile Include="ResultDTO.cs" />
+    <Compile Include="rfidrawingDTO.cs" />
+    <Compile Include="rfiDTO.cs" />
+    <Compile Include="rptDailybrasssignDTO.cs" />
+    <Compile Include="rptDailytoolboxDTO.cs" />
+    <Compile Include="rptManhourDTO.cs" />
+    <Compile Include="rptMTOSummaryDTO.cs" />
+    <Compile Include="rptProgressDTO.cs" />
+    <Compile Include="rptProjectScheduleHistoryDTO.cs" />
+    <Compile Include="rptProjectScheduleSignOffDTO.cs" />
+    <Compile Include="rptPunchDTO.cs" />
+    <Compile Include="rptQAQCformDTO.cs" />
+    <Compile Include="rptScheduledDateInfoDTO.cs" />
+    <Compile Include="rptScheduleManhourDTO.cs" />
+    <Compile Include="rptSignOffDTO.cs" />
+    <Compile Include="rptSpentManhourRateDTO.cs" />
+    <Compile Include="rptSystemTagDTO.cs" />
+    <Compile Include="rptTimeSheetTableDTO.cs" />
+    <Compile Include="rptToolboxsignDTO.cs" />
+    <Compile Include="ruleofcreditweightDTO.cs" />
+    <Compile Include="ScaffoldAndRequestDTO.cs" />
+    <Compile Include="scaffoldDTO.cs" />
+    <Compile Include="ScaffoldrequestDTO.cs" />
+    <Compile Include="scaffoldrequesthistoryDTO.cs" />
+    <Compile Include="scaffoldtradeDTO.cs" />
+    <Compile Include="sdDTO.cs" />
+    <Compile Include="sdmateriallistDTO.cs" />
+    <Compile Include="shiftDTO.cs" />
+    <Compile Include="sigmacueDTO.cs" />
+    <Compile Include="SigmaLogDTO.cs" />
+    <Compile Include="skillDTO.cs" />
+    <Compile Include="standardworkweekDTO.cs" />
+    <Compile Include="systemDTO.cs" />
+    <Compile Include="tagnumberdrawingDTO.cs" />
+    <Compile Include="taskcategoryDTO.cs" />
+    <Compile Include="timesheetDTO.cs" />
+    <Compile Include="TimesheetprogressDTO.cs" />
+    <Compile Include="toolboxsignDTO.cs" />
+    <Compile Include="tracktimesheetDTO.cs" />
+    <Compile Include="turnoverattendeeDTO.cs" />
+    <Compile Include="turnoverDTO.cs" />
+    <Compile Include="UomDTO.cs" />
+    <Compile Include="usergroupDTO.cs" />
+    <Compile Include="userlookupDTO.cs" />
+    <Compile Include="weatherDTO.cs" />
+    <Compile Include="weekendholidayDTO.cs" />
+    <Compile Include="wfdepartstructureDTO.cs" />
+    <Compile Include="workexecplanDTO.cs" />
+    <Compile Include="WorkflowTempDTO.cs" />
+    <Compile Include="WorktimeDTO.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
